@@ -121,17 +121,17 @@ h3, p {
             }
         }
 
-            if(count==10)
-            {
-                
-                if(urScore>cScore)
-                {
-                whole.innerHTML="<h1>YOU WON</h1>";
-                }
-                else if(cScore>urscore){
-                whole.innerHTML="<h1>COMPUTER WON</h1>";}
-                else {whole.innerHTML="</h1>DRAW</h1>";}
-            }
+            if(count==10) {
+    if(urScore > cScore) {
+        whole.innerHTML = "<h1>YOU WON</h1>";
+    } else if(cScore > urScore) {
+        whole.innerHTML = "<h1>COMPUTER WON</h1>";
+    } else {
+        whole.innerHTML = "<h1>DRAW</h1>";
+    }
+    whole.innerHTML += `<br><button onclick="location.reload()" class="btn">Play Again</button>`;
+}
+
 
             rem.innerHTML="<br>Remaining move : "+(10-count);
             
